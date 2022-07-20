@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">        
+    </head>    
+    <body>
+        <!--título central-->
+        <div class="container">
+            <header class="header">
+                <h1 id="title" class="text-center">Pesquisa de satisfação</h1>
+                <p id="description" class="description text-center">
+                    Obrigado por nos ajudar com nossa pesquisa de satisfação!
+                </p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nome</label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Informe seu nome:"
+                        required
+                        />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="name">E-mail</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Informe seu melhor e-mail:"
+                        required
+                        />
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Idade<span class="clue">(opcional)</span></label>
+                    <input
+                        type="number"
+                        name="age"
+                        id="number"
+                        min="10"
+                        max="99"
+                        class="form-control"
+                        placeholder="Informe sua idade:"/>
+                </div>
+                <div class="form-group">
+                    <p>Escolha as opções que melhor definem sua função atual:</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                      <option disabled selected value>Selecione sua função atual</option>
+                      <option value="student">Estudante</option>
+                      <option value="job">Trabalhor em tempo integral</option>
+                      <option value="learner">Estudante em tempo integral</option>
+                      <option value="preferNo">Prefiro não dizer</option>
+                      <option value="other">Outros...</option>
+                    </select>
+                </div>       
+                
+                <div class="form-group">
+                    <p>Você recomendaria meus serviços a um amigo?</p>
+                    <label>
+                        <input
+                        name="user-recommend"
+                        value="definitely"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                        />Claro                        
+                    </label>
+                    <label>
+                        <input
+                        name="user-recommend"
+                        value="maybe"
+                        type="radio"
+                        class="input-radio"
+                        />Talvez
+                    </label>
+                    <label>
+                        <input
+                        name="user-recommend"
+                        value="not-sure"
+                        type="radio"
+                        class="input-radio"
+                        />Nunca                        
+                    </label>
+                </div>
+                <div class="form-group">
+                <p>O que acha que poderia melhorar nos nossos serviços?</p>
+                <select name="most-like" id="most-like" class="form-control" required>
+                    <option disabled selected value> Escolha uma opção</option>
+                    <option value="antedimento">Atendimento</option>
+                    <option value="pontualidade">Pontualidade</option>
+                    <option value="organização">Organização</option>
+                    <option value="antedimento">Outros</option>
+                    <option value="nenhum">Nenhum</option>
+                </select>
+                </div>
+                <div class="form-group">
+                    <p>Quais serviços de contabilidade você precisou nos últimos 12 meses?
+                        <span class="clue"> (Escolha quantos quiser)</span>
+                    </p>
+                    <label>
+                        <input name="prefer" value="abertura-mei" type="checkbox" class="input-checkbox">
+                        "Abertura de mei"
+                    </label>
+                    <label>
+                        <input name="prefer" value="irpj" type="checkbox" class="input-checkbox">
+                        "IRPJ"
+                    </label>
+                    <label>
+                        <input name="prefer" value="baixa-de-empresa" type="checkbox" class="input-checkbox">
+                        "Baixa de empresa
+                    </label>
+                    <label>
+                        <input name="prefer" value="alteração" type="checkbox" class="input-checkbox">
+                        "Alteração de tipo empresarial"
+                    </label>
+                    <label>
+                        <input name="prefer" value="contrato-social" type="checkbox" class="input-checkbox">
+                        "Registro de contrato social"
+                    </label>
+                    <label>
+                        <input name="prefer" value="tributaria" type="checkbox" class="input-checkbox">
+                        "Consultoria tributária"
+                    </label>
+                    <label>
+                        <input name="prefer" value="financeira" type="checkbox" class="input-checkbox">
+                        "Consultoria financeira"
+                    </label>
+                    <label>
+                        <input name="prefer" value="contábil" type="checkbox" class="input-checkbox">
+                        "Consultoria contábil"
+                    </label>
+                    <label>
+                        <input name="prefer" value="pericia" type="checkbox" class="input-checkbox">
+                        "Pericia Contábil"
+                    </label>
+                    <label>
+                        <input name="prefer" value="fusão" type="checkbox" class="input-checkbox">
+                        "Fusão Empresarial"
+                    </label>
+                    <label>
+                        <input name="prefer" value="BPO" type="checkbox" class="input-checkbox">
+                        "BPO Finaceiro"
+                    </label>
+                    <label>
+                        <input name="prefer" value="nenhum" type="checkbox" class="input-checkbox">
+                        "Nenhum"
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Algum comentário ou sugestão?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Digite aqui seu comentário...">                       
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button"> Enviar </button>
+                </div>
+            </div>                
+          </form>
+        </div>
+     </body>
+</html>
+
+
